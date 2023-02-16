@@ -21,7 +21,7 @@ class UserAdmin(BaseUserAdmin):
                     'is_superuser',
                 )
             }
-        )
+        ),
         (_('Important dates'),{'fields': ('last login',)}),
     )
 admin.site.register(models.User, UserAdmin)
